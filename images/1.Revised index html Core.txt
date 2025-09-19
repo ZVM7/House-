@@ -1,0 +1,21 @@
+🔧 Revised index.html (Core Sections)
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-content">
+    <h1>Build Fast. Build Secure. Build to Last.</h1>
+    <p>Boutique DevSecOps + Secure Web & Mobile App Development
+       for funded startups who need to launch fast—and stay investor-ready.</p>
+    <a href="#contact" class="cta-btn">🚀 Book Your Free Security Sprint Call</a>
+  </div>
+</section>
+
+
+     <div class="slide">
+          <img src="images/Slide 1.png" alt="Service 1">
+          <div class="slide-content">
+            <h2>Build Fast. Build Secure. Build to Last.</h2>
+            <p>We integrate DevSecOps from day one — so your web & mobile apps launch stronger, safer, and ready to scale.</p>
+            <a href="#call" class="cta primary">Check Our Services</a>
+          </div>
+        </div>

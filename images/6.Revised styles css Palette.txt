@@ -1,0 +1,86 @@
+🎨 Revised styles.css (Palette + Layout Enhancements)
+
+Add/replace these rules in your CSS:
+
+/* Color Palette */
+:root {
+  --primary: #0A2540;   /* deep navy */
+  --secondary: #14B8A6; /* teal accent */
+  --background: #F9FAFB; /* light gray background */
+  --text: #1F2937;      /* dark gray text */
+  --cta: #FF6B35;       /* orange for high-contrast CTA */
+}
+
+/* Hero */
+#hero {
+  background: var(--primary);
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+#hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.cta-btn {
+  background: var(--cta);
+  color: white;
+  padding: 0.9rem 1.8rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+.cta-btn:hover {
+  background: #e85a28;
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  background: var(--background);
+  color: var(--text);
+}
+section:nth-child(even) {
+  background: white;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+/* Three Columns */
+.three-cols, .service-cards, .process-steps {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.col, .card, .step {
+  background: white;
+  border: 1px solid #E5E7EB;
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Footer */
+#footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+#footer .small {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  color: #CBD5E1;
+}
+

@@ -1,0 +1,13 @@
+✅ Revised Hero Section (HTML)
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-content">
+    <h1>Secure Web & Mobile Apps for Startups Who Can’t Afford Costly Mistakes</h1>
+    <p>We help funded startups launch fast, with DevSecOps baked in from day one—
+       avoiding broken code, faulty stacks, and wasted resources.</p>
+    <a href="#contact" class="cta-btn">🚀 Book Your Free Security Sprint Call</a>
+  </div>
+</section>
+
+

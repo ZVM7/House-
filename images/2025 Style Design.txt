@@ -1,0 +1,203 @@
+Here’s an updated styles.css that aligns with startups/SMBs:
+
+/* === GLOBAL RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.7;
+  color: #222;
+  background: #fff;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.6em;
+}
+
+p, li {
+  font-size: 1.05rem;
+  margin-bottom: 1em;
+  color: #444;
+}
+
+ul {
+  list-style: disc inside;
+  margin-bottom: 1.5em;
+}
+
+/* === LAYOUT HELPERS === */
+section {
+  padding: 5rem 8%;
+}
+
+.three-cols, .service-cards, .process-steps {
+  display: grid;
+  grid-gap: 2rem;
+}
+
+.three-cols {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.service-cards {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.process-steps {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* === HERO === */
+#hero {
+  background: linear-gradient(135deg, #2563eb, #3b82f6); /* startup blue gradient */
+  color: #fff;
+  text-align: center;
+  padding: 7rem 8%;
+}
+
+#hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1.2rem;
+}
+
+#hero p {
+  max-width: 680px;
+  margin: 0 auto 2rem;
+  color: #e5e7eb;
+  font-size: 1.15rem;
+}
+
+/* === CTA BUTTON === */
+.cta-btn {
+  display: inline-block;
+  background: #f97316; /* bright orange CTA */
+  color: #fff;
+  padding: 0.9rem 1.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.25s ease;
+}
+
+.cta-btn:hover {
+  background: #ea580c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* === WHY BOUTIQUE === */
+#why-boutique {
+  background: #f9fafb;
+  text-align: center;
+}
+
+#why-boutique h2 {
+  margin-bottom: 2rem;
+}
+
+#why-boutique .col {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#why-boutique .col:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+/* === SERVICES === */
+#services {
+  background: #fff;
+  text-align: center;
+}
+
+#services .card {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+#services .card:hover {
+  background: #fff;
+  border-color: #3b82f6;
+  box-shadow: 0 6px 20px rgba(59,130,246,0.1);
+  transform: translateY(-6px);
+}
+
+/* === PROCESS === */
+#process {
+  background: #f9fafb;
+  text-align: center;
+}
+
+#process .step {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.25s ease;
+}
+
+#process .step:hover {
+  border-color: #2563eb;
+  transform: translateY(-4px);
+}
+
+/* === ABOUT === */
+#about {
+  background: #fff;
+}
+
+#about .about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* === FOOTER === */
+#footer {
+  background: #111827;
+  color: #f3f4f6;
+  text-align: center;
+  padding: 4rem 8% 2rem;
+}
+
+#footer h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+#footer p {
+  max-width: 600px;
+  margin: 0.5rem auto 1.5rem;
+  color: #d1d5db;
+}
+
+#footer .cta-btn {
+  background: #f97316;
+}
+
+#footer .cta-btn:hover {
+  background: #ea580c;
+}
+
+#footer .small {
+  font-size: 0.85rem;
+  margin-top: 2rem;
+  color: #9ca3af;
+}
+

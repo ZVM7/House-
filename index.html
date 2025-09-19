@@ -1,367 +1,491 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YourBrand – Developer Studio</title>
+  <title>Boutique Web & Mobile Development Studio</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@600&family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Satoshi isn’t on Google Fonts, but you can use the free CDN -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ===== Header ===== -->
-  <header class="main-header">
-    <div class="logo">
-      <a href="#home" aria-label="Brand Home">
-        <img src="images/LOGO.png" alt="Brand Logo">
-      </a>
-      <span class="logo-text">House <span style="text-transform: lowercase;">O</span>f Code</span>
 
-    </div>
 
-    <!-- Hamburger (mobile only) -->
-    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav class="main-nav" id="mainNav" aria-label="Primary">
-      <ul class="nav-links">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About Us</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#resources" class="nav-link">Portfolio</a></li>
-        <li><a href="#learn" class="nav-link">Resources</a></li>
-        <li><a href="#contact" class="nav-link">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- ===== Hero Section ===== -->
-  <section class="hero" id="home">
-    <div class="hero-slider">
-      <div class="slides">
-        <!-- Slide 1 -->
-        <div class="slide">
-          <img src="images/Slide 1.png" alt="Service 1">
-          <div class="slide-content">
-            <h2>Build Fast. Build Secure. Build to Last.</h2>
-            <p>We integrate DevSecOps from day one — so your web & mobile apps launch stronger, safer, and ready to scale.</p>
-            <a href="#call" class="cta primary">Check Our Services</a>
-          </div>
+    <header class="header">
+      <div class="container">
+        <!-- Logo + Company Name -->
+        <div class="logo">
+          <img src="images/LOGO.png" alt="Company Logo">
+          <span class="company-name">House of Code</span>
         </div>
 
-        <!-- Slide 2 -->
-        <div class="slide">
-          <img src="images/slide 2.png" alt="Service 2">
-          <div class="slide-content">
-            <h2>No Code Factories. Just Craft & Care.</h2>
-            <p>100% in-house team, boutique approach, startup-friendly. See how we’ve helped brands launch secure, high-performing digital experiences.</p>
-            <a href="#call" class="cta primary">→ Book Free Strategy Call</a>
-          </div>
-        </div>
+        <!-- Navbar -->
+        <nav class="navbar">
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#">Work flow</a> 
+          <a href="#">Packages</a>
+          <a href="#">Coaching</a>
+          <a href="#">About</a>
+        </nav>
 
-        <!-- Slide 3 -->
-        <div class="slide">
-          <img src="images/Slide 3.png" alt="Service 3">
-          <div class="slide-content">
-            <h2>Ready to Secure Your Next Launch?</h2>
-            <p>Book your free strategy call and discover how shift-left security saves time, money, and headaches down the road.</p>
-            <a href="#call" class="cta primary">→ Book Free Strategy Call</a>
-          </div>
-        </div>
+        <!-- CTA Button -->
+        <a href="#" class="header-btn">Get Started</a>
       </div>
+    </header>
 
 
-      <!-- Navigation dots -->
-      <div class="slider-dots">
-        <span class="dot active" data-slide="0"></span>
-        <span class="dot" data-slide="1"></span>
-        <span class="dot" data-slide="2"></span>
-      </div>
-    </div>
+    <!-- HERO -->
+    <section class="hero">
+        <video autoplay muted loop playsinline>
+          <source src="videos/bacground hero.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <div class="hero-content">
+          <h1>Boutique Web & Mobile Apps,<br> Built In-House</h1>
+          <p>No outsourching, no shortcuts, just dedicated experts building your app the right way from day one</p>
+
+          <div class="hero-form">
+            <input type="email" placeholder="Enter your email">
+            <button class="btn">Let's Build Together</button>
+          </div>
+        </div>
+    </section>
 
 
-    <div class="hero-image">
-      <img src="images/New LOGO.png" alt="Developer at work">
-      <div class="overlay-text">You Talk To Makers, Not Middleman</div>
-    </div> 
-  </section>
-
-  <!-- ===== Services ===== -->
-  <section class="services-section" id="services">
-    <h2>Our Services</h2>
-    <div class="service-grid">
-      <div class="service-card">
-          <h3>Secure Web App Development</h3>
-          <p>
-            Web Apps built secure from day one. We design high-performing applications with DevSecOps 
-            integrated into every sprint — launching faster, safer, and future-proof.
+    <section class="why-choose bgH" id="why-choose" aria-labelledby="why-choose-title">
+      <div class="container">
+        <header class="why-choose-header">
+          <h2 id="why-choose-title">Why Choose Us</h2>
+          <p class="why-choose-sub">
+            We combine boutique focus, engineering excellence, and security-by-design to deliver apps that launch faster and scale with confidence.
           </p>
-          <a href="#contact" class="btn-primary">Contact Us</a>
-      </div>
-      <div class="service-card">
-        <h3>Secure Mobile App Development</h3>
-        <p> “Mobile Apps That Scale Safely From MVPs to enterprise-grade apps, we embed security into the mobile development lifecycle. You get user-friendly apps that protect your brand, your data, and your bottom line.</p>
-        <a href="#contact" class="btn-primary">Contact Us</a>
+        </header>
 
-      </div>
+        <div class="why-cards">
+          <article class="why-card" role="article" aria-label="Exclusive Focus">
+            <div class="why-icon" aria-hidden="true">
+              <!-- Focus / Target -->
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="3" stroke-width="2" />
+                <path d="M2 12h3M19 12h3M12 2v3M12 19v3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h4>Exclusive Focus</h4>
+            <p>We take one project at a time so your product receives concierge attention—no competing priorities, no distractions.</p>
+          </article>
 
-      <div class="service-card">
-        <h3> DevSecOps & Shift-Left Integration</h3>
-        <p> Security Isn’t an Afterthought — It’s Our Foundation Most teams bolt on security at the end. We bring it in at the start. Shift-left principles mean fewer vulnerabilities, faster launches, and long-term cost savings. Security becomes your competitive advantage.</p>
-        <a href="#contact" class="btn-primary">Contact Us</a>
+          <article class="why-card" role="article" aria-label="In-House Craftsmanship">
+            <div class="why-icon" aria-hidden="true">
+              <!-- Code / Tools -->
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="16 18 22 12 16 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="8 6 2 12 8 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h4>In-House Craftsmanship</h4>
+            <p>Everything is designed, developed and secured by our team—no outsourcing—so you collaborate directly with the makers.</p>
+          </article>
 
-      </div>
+          <article class="why-card" role="article" aria-label="Secure by Design">
+            <div class="why-icon" aria-hidden="true">
+              <!-- Shield -->
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 3l7 3v5c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6l7-3z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 12l2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h4>Secure by Design</h4>
+            <p>Security is embedded in our process—automated tests, CI/CD, and secure defaults so your product is investor-ready from day one.</p>
+          </article>
+        </div> <!-- /.why-cards -->
+      </div> <!-- /.container -->
+      <div class="why-choose-cta">
+      <a href="#contact" class="cta-btn">Let's Build Together</a>
     </div>
   </section>
 
-  <!-- ================= About Us Section ================= -->
-<section id="about" class="about-section">
-  <div class="container">
-    <h2>About Us</h2>
-    <p class="intro">
-      We’re a boutique team of developers passionate about building secure, scalable, and high-performing applications.  
-      From startups to established businesses, we embed security and quality into every line of code.
-    </p>
+    <section class="services" id="services">
+        <!-- Falling Elements -->
+        
+        <div class="container">
 
-    <div class="about-grid">
-      <!-- Company Info -->
-      <div class="about-card">
-        <h3>Our Company</h3>
-        <p>
-          With years of experience in full-stack development and DevSecOps, our mission is to help brands
-          launch faster and safer without compromising on quality.  
-          We don’t cut corners—we build for the long run.
-        </p>
-      </div>
+          <!-- Header & Intro -->
+          <div class="services-header">
+            <h2>Our Services</h2>
+            <p>Web and mobile apps engineered to help startups and SMB's launch faster, grow stronger and scale with confidence.</p>
+          </div>
 
-      <!-- Individual Info -->
-      <div class="about-card">
-        <h3>About Me</h3>
-        <p>
-          Hi, I’m [Your Name], a full-stack developer specializing in the MERN stack, cloud deployment,
-          and modern security practices. I work closely with clients to turn their vision into digital reality.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+          <!-- Service Cards -->
+          <div class="service-cards">
+            <div class="card">
+              <div class="card-icon">
+          <!-- Monitor -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke-width="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21" stroke-width="2"/>
+                  <line x1="12" y1="17" x2="12" y2="21" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3>Web App<br>Development</h3>
+              <p>Scalable, secure, and user-friendly web applications tailored to your business needs. From SaaS platforms to internal tools, we build web solutions that grow with your business.</p>
+            </div>
 
-<!-- ================= Portfolio Section ================= -->
-<section id="portfolio" class="portfolio-section">
-  <div class="container">
-    <h2>Portfolio</h2>
-    <p class="intro">A selection of projects we’ve proudly delivered for clients.</p>
+            <div class="card">
+              <div class="card-icon">
+          <!-- Smartphone -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <rect x="7" y="2" width="10" height="20" rx="2" ry="2" stroke-width="2"/>
+                  <line x1="12" y1="18" x2="12" y2="18" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3>Mobile App<br>Development</h3>
+              <p>iOS, Android, or cross-platform—we create mobile apps that deliver seamless user experiences. From MVP to full-scale launch, we help you reach customers wherever they are.</p>
+            </div>
 
-    <div class="portfolio-slider">
-      <div class="slider-track">
-        <!-- 6 unique projects -->
-        <div class="portfolio-item"><img src="images/project 1.png" alt="Project 1"></div>
-        <div class="portfolio-item"><img src="images/project 2.png" alt="Project 2"></div>
-        <div class="portfolio-item"><img src="images/project 3.png" alt="Project 3"></div>
-        <div class="portfolio-item"><img src="images/project 4.png" alt="Project 4"></div>
-        <div class="portfolio-item"><img src="images/project 5.png" alt="Project 5"></div>
-        <div class="portfolio-item"><img src="images/project 6.png" alt="Project 6"></div>
-
-        <!-- Duplicate the same 6 projects for seamless scroll -->
-        <div class="portfolio-item"><img src="images//project 1.png" alt="Project 1"></div>
-        <div class="portfolio-item"><img src="images/project 2.png" alt="Project 2"></div>
-        <div class="portfolio-item"><img src="images/project 3.png" alt="Project 3"></div>
-        <div class="portfolio-item"><img src="images/project 4.png" alt="Project 4"></div>
-        <div class="portfolio-item"><img src="images/project 5.png" alt="Project 5"></div>
-        <div class="portfolio-item"><img src="images/project 6.png" alt="Project 6"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="invest-early" class="invest-section hidden">
-  <div class="container">
-    <h2>💡 Invest Early. Save Big Later.</h2>
-    <p class="intro">
-      Most teams treat security like duct tape — something added at the end. But vulnerabilities caught late can cost 10x more to fix than those found early. 
-      Our shift-left approach integrates DevSecOps into every step of development, reducing risk, accelerating launch, and protecting your brand’s reputation.
-    </p>
-    <div class="stages">
-    <div class="stage"><span class="label">Design</span> <span class="value" data-target="100">$0</span></div>
-    <div class="stage"><span class="label">Development</span> <span class="value" data-target="1000">$0</span></div>
-    <div class="stage"><span class="label">Testing</span> <span class="value" data-target="5000">$0</span></div>
-    <div class="stage"><span class="label">Post-Launch</span> <span class="value" data-target="10000">$0</span></div>
-  </div>
-  
-     <p class="highlight">
-      ➝ Shift-Left Security = Find Bugs Early → Save Money, Launch Faster
-    </p> 
-  </div>
-</section>
-
-<style>
-.cost-counter {
-  text-align: center;
-}
-.stages {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1rem;
-}
-.stage {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #e63946;
-}
-.stage .label {
-  display: block;
-  font-size: 1.5rem;   /* increase stage name size */
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #222;
-}
-
-.stage .value {
-  font-size: 2.4rem;   /* increase dollar amount size */
-  font-weight: 800;
-  color: #e63946;
-}
-</style>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const counters = document.querySelectorAll(".value");
-  counters.forEach(counter => {
-    let target = +counter.getAttribute("data-target");
-    let current = 0;
-    let step = target / 900; // speed
-
-    let update = () => {
-      current += step;
-      if (current < target) {
-        counter.textContent = "$" + Math.floor(current);
-        requestAnimationFrame(update);
-      } else {
-        counter.textContent = "$" + target.toLocaleString();
-      }
-    };
-    update();
-  });
-});
-</script>
+            <div class="card">
+              <div class="card-icon">
+          <!-- Shield Lock -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M12 22c4.5-1 8-5 8-10V6l-8-4-8 4v6c0 5 3.5 9 8 10z" stroke-width="2"/>
+                  <circle cx="12" cy="12" r="2" stroke-width="2"/>
+                  <path d="M12 14v2" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3>DevSecOps<br>Integration</h3>
+              <p>Security and speed are built into every project. With continuous integration, automated testing, and deployment-ready infrastructure, your app launches faster—and stays safer.</p>
+            </div>
 
 
+            <div class="card">
+              <div class="card-icon">
+            <!-- Wrench -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M14.7 6.3a5 5 0 01-6.4 6.4l-4.9 4.9a2 2 0 102.8 2.8l4.9-4.9a5 5 0 006.4-6.4z" stroke-width="2"/>
+                  </svg>
+                </div>
+                <h3>Ongoing Support<br>& Maintenance</h3>
+                <p>Stay agile with a flexible package of support hours. Fix bugs, add pages or features, tweak designs, or improve existing sections—all on-demand, so your app evolves as your business grows.</p>
+              </div>
+            </div>
 
-
-
-
-
-  <!-- ===== Contact ===== -->
- <section class="contact-section" id="contact">
-  <h2>Contact Us</h2>
-  <form class="contact-form">
+          <div class="services-cta">
+            <a href="#contact" class="cta-btn">Let's Build Together</a>
+          </div>
+        </div>
     
-    <!-- Name -->
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
+    </section>
 
-    <!-- Email -->
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
+<section class="process-section" id="process">
+  <div class="process-container">
+    <h2 class="process-title">Our Process</h2>
+    <p class="process-intro">
+      From first ideas to final launch, our proven step-by-step process keeps your
+      product on track and built to last.
+    </p>
 
-    <!-- Service selection -->
-    <label for="service">Service</label>
-    <select id="service" name="service" required>
-      <option value="">-- Please choose an option --</option>
-      <option value="web-app">Web Application</option>
-      <option value="mobile-app">Mobile Application</option>
-      <option value="web-section">Section of a Web App</option>
-      <option value="mobile-section">Section of a Mobile App</option>
-    </select>
+    <div class="process-timeline">
+      <div class="process-step">
+        <div class="process-circle">1</div>
+        <div class="process-text">
+          <h3>Discovery</h3>
+          <p>We research, understand your needs, and plan the best strategy.</p>
+        </div>
+      </div>
 
-    <!-- Project description -->
-    <label for="message">Describe Your Project</label>
-    <textarea id="message" name="message" rows="5" placeholder="Tell us about the project you're looking for..." required></textarea>
+      <div class="process-step">
+        <div class="process-circle">2</div>
+        <div class="process-text">
+          <h3>Craft</h3>
+          <p>We design and develop your solution with attention to detail.</p>
+        </div>
+      </div>
 
-    <!-- Submit -->
-    <button type="submit">Send</button>
-  </form>
+      <div class="process-step">
+        <div class="process-circle">3</div>
+        <div class="process-text">
+          <h3>Launch</h3>
+          <p>We deploy your project and ensure everything runs smoothly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 
-  <!-- ===== Footer ===== -->
-  <footer class="footer">
-    <p>&copy; 2025 YourBrand. All rights reserved.</p>
-  </footer>
+<section class="about" id="about">
 
-  <!-- ===== Sticky CTA ===== -->
-  <a href="#contact" class="sticky-cta">Get Started</a>
 
-  <!-- ===== Exit Popup ===== -->
-  <div class="exit-popup" id="exitPopup">
-    <div class="popup-content">
-      <button class="close-popup" id="closePopup">&times;</button>
-      <h2>Avoid Common Coding Mistakes</h2>
-      <p>Discover why shift-left principles matter and how to reduce costly errors in development.</p>
-      <form class="popup-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <button type="submit">Get the Guide</button>
-      </form>
+
+
+  <div class="container about-container">
+
+    <!-- LEFT SIDE: About Content -->
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>
+        We’re a boutique studio founded by makers who believe in quality over quantity. Unlike large agencies that juggle dozens of clients, we focus on one project at a time. This means you get direct access to the people building your product—no account managers, no hidden subcontractors.
+        Web & Mobile Development: Crafting apps that work flawlessly across devices and platforms.
+        Security & Process Excellence: Bringing DevSecOps practices, project management, and lean methodology to every build.
+        We know what it’s like to be let down by unreliable dev partners. As SaaS founders ourselves, we’ve felt the frustration of buggy code, broken stacks, and wasted opportunities. That’s why we built this studio: to give startups the boutique partner we always wished we had.
+      </p>
+      <div class="about-cta">
+        <a href="#contact" class="cta-btn">Let’s Build Together</a>
+      </div>
+    </div> <!-- End .about-content -->
+
+    <!-- RIGHT SIDE: Values + Portfolio -->
+    <div class="about-right">
+
+      <!-- Core Values -->
+      <div class="values">
+        <div class="value-card">
+          <div class="value-header">🌟 Innovation</div>
+          <div class="value-text">
+            We continuously explore new technologies to bring modern solutions to our clients.
+          </div>
+        </div>
+
+        <div class="value-card">
+          <div class="value-header">🤝 Integrity</div>
+          <div class="value-text">
+            We are committed to honesty, transparency, and delivering on our promises.
+          </div>
+        </div>
+
+        <div class="value-card">
+          <div class="value-header">👥 Collaboration</div>
+          <div class="value-text">
+            We believe great results come from teamwork and open communication.
+          </div>
+        </div>
+
+        <div class="value-card">
+          <div class="value-header">🌍 Sustainability</div>
+          <div class="value-text">
+            We aim to build solutions that are eco-friendly and future-ready.
+          </div>
+        </div>
+      </div> <!-- End .values -->
+
+
+      <!-- Expand Arrow -->
+      <div class="expand-arrow">▼ Show Portfolio</div>
+
+      <div class="portfolio-slider">
+        <div class="slide">
+          <img src="images/project 1.png" alt="MERN E-commerce App">
+        </div>
+
+        <div class="slide">
+          <img src="images/project 2.png" alt="Banking Mobile App">
+        </div>
+
+        <div class="slide">
+          <img src="images/project 3.png" alt="Shopify Store">
+        </div>
+        <div class="slide">
+          <img src="images/project 4.png" alt="Shopify Store">
+        </div>
+      </div>
+
+
+
+  </div> <!-- End .about-container -->
+</section>
+<section class="support-packages">
+  <!-- Section Heading -->
+  <div class="section-header">
+    <h2>Support That Keeps Your App Moving Forward</h2>
+    <p>
+      Launching your app is only the beginning. With our flexible support packages, 
+      you can fix bugs, add new features, update designs, or optimize functionality—
+      exactly when you need it. No long-term contracts, no surprises—just a trusted 
+      partner keeping your app secure, up-to-date, and ready for growth.
+    </p>
+  </div>
+
+  <!-- Roadmap / Journey -->
+  <div class="package-roadmap">
+    <div class="package-step">
+      <div class="step-icon"><i class="fa-solid fa-bolt"></i></div>
+      <div class="step-content">
+        <h4>Fix & Go</h4>
+        <p>Quick fixes and small updates on demand.</p>
+      </div>
+    </div>
+
+    <div class="package-step">
+      <div class="step-icon"><i class="fa-solid fa-wrench"></i></div>
+      <div class="step-content">
+        <h4>Build & Improve</h4>
+        <p>Add features, pages, or improvements easily.</p>
+      </div>
+    </div>
+
+    <div class="package-step">
+      <div class="step-icon"><i class="fa-solid fa-rocket"></i></div>
+      <div class="step-content">
+        <h4>Evolve & Grow</h4>
+        <p>Full ongoing support to keep your app evolving with your business.</p>
+      </div>
+    </div>
+
+    <div class="package-step">
+      <div class="step-icon"><i class="fa-solid fa-code"></i></div>
+      <div class="step-content">
+        <h4>Custom Coding, When You Need It</h4>
+        <p>
+          Need to add a new section, tweak a feature, change styles, or enhance 
+          functionality? Our custom coding service delivers fast, precise updates 
+          for your website or app.
+        </p>
+      </div>
     </div>
   </div>
 
-  <!-- ===== Scripts ===== -->
-  <script src="script.js">
-    // Mobile nav toggle
-    const hamburger = document.getElementById('hamburger');
-    const mainNav = document.getElementById('mainNav');
+  <!-- Contact CTA -->
+  <div class="support-cta">
+    <form>
+      <label for="interest">I’m interested in:</label>
+      <select id="interest" name="interest">
+        <option>Fix & Go</option>
+        <option>Build & Improve</option>
+        <option>Evolve & Grow</option>
+        <option>Custom Coding</option>
 
-    hamburger.addEventListener('click', () => {
-      const isOpen = mainNav.classList.toggle('open');
-      hamburger.classList.toggle('active');
-      hamburger.setAttribute('aria-expanded', isOpen);
-      document.body.classList.toggle('menu-open', isOpen);
-    });
+      </select>
+      <button type="submit">Get in Touch</button>
+    </form>
+  </div>
+</section>
 
-    // Close nav when link clicked
-    document.querySelectorAll('.main-nav a').forEach(link => {
-      link.addEventListener('click', () => {
-        if (mainNav.classList.contains('open')) {
-          mainNav.classList.remove('open');
-          hamburger.classList.remove('active');
-          hamburger.setAttribute('aria-expanded', false);
-          document.body.classList.remove('menu-open');
-        }
-      });
-    });
 
-    // Shrinking header
-    const header = document.querySelector('.main-header');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        header.classList.add('shrink');
-      } else {
-        header.classList.remove('shrink');
-      }
-    });
 
-    // Exit intent popup
-    const exitPopup = document.getElementById('exitPopup');
-    const closePopup = document.getElementById('closePopup');
-    let popupShown = false;
+<section class="contact">
 
-    document.addEventListener('mouseleave', (e) => {
-      if (e.clientY < 10 && !popupShown) {
-        exitPopup.classList.add('show');
-        popupShown = true;
-      }
-    });
+  <div class="contact-container">
+    <!-- Left Column -->
+    <div class="contact-text">
+      <h2 class="contact-heading">Your Next Project <br> Starts Here</h2>
+      <p class="contact-subtext">
+        Whether it’s a web app, mobile app, or ongoing support, we’re here to help you ship faster, smarter, and more securely. Get in touch and let’s start building.
+      </p>
+    </div>
 
-    closePopup.addEventListener('click', () => {
-      exitPopup.classList.remove('show');
-    });
-  </script>
+    <!-- Right Column: Form -->
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="company">Company</label>
+        <input type="text" id="company" name="company" placeholder="Your Company">
+      </div>
+
+      <!-- Service Selection -->
+      <div class="form-group">
+        <label for="service">Which type of project are you interested in?</label>
+        <select id="service" name="service">
+          <option value="" disabled selected>Select a service</option>
+          <option>Custom Web Application</option>
+          <option>Mobile App (iOS/Android)</option>
+          <option>Ongoing Support / Maintenance</option>
+          <option>Custom Feature / Upgrade</option>
+        </select>
+      </div>
+
+      <!-- Budget Selection -->
+      <div class="form-group">
+        <label for="budget">Estimated Project Budget</label>
+        <select id="budget" name="budget">
+          <option value="" disabled selected>Select your budget</option>
+          <option>$1 – $24,999 — Perfect for MVPs or small updates</option>
+          <option>$25,000 – $49,999 — Ideal for mid-sized projects</option>
+          <option>$50,000 – $99,999 — Full-featured web or mobile apps</option>
+          <option>$100,000+ — Complex enterprise-scale projects</option>
+        </select>
+      </div>
+
+      <!-- Project Description -->
+      <div class="form-group">
+        <label for="project">Project Description</label>
+        <textarea id="project" name="project" rows="5" placeholder="Describe your project idea, goals, or requirements..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Start a Project</button>
+    </form>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Logo, Tagline & Socials -->
+    <div class="footer-brand">
+      <div class="logo-tagline">
+        <img src="images/LOGO.png" alt="Company Logo" class="logo">
+      </div>
+      <div class="socials">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Our Services -->
+    <div class="footer-services">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="#web">Web Development</a></li>
+        <li><a href="#design">UI/UX Design</a></li>
+        <li><a href="#marketing">Digital Marketing</a></li>
+        <li><a href="#support">Support & Maintenance</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 House of Code. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+<!-- JS for scroll animations -->
+ <script src="script.js" defer></script>
+
+
+
 
 </body>
 </html>

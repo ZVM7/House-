@@ -1,0 +1,122 @@
+1️⃣ Updated index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique Web & Mobile Development Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-content">
+    <h1>Boutique Web & Mobile Apps, Built In-House</h1>
+    <p>We’re not a code factory. We’re a boutique studio that takes on one client at a time— 
+       delivering beautiful, high-performing, and secure digital experiences with white-glove attention.</p>
+    <a href="#contact" class="cta-btn">✨ Start Your Project</a>
+  </div>
+</section>
+
+<!-- WHY BOUTIQUE -->
+<section id="why-boutique">
+  <h2>Why Choose a Boutique Studio?</h2>
+  <div class="three-cols">
+    <div class="col">
+      <h3>Exclusive Focus</h3>
+      <p>We only take on one project at a time. You get our full attention, 
+         concierge-style service, and no competing priorities.</p>
+    </div>
+    <div class="col">
+      <h3>In-House Craftsmanship</h3>
+      <p>Everything is designed, built, and secured by us. 
+         No outsourcing, no middlemen—just direct collaboration with makers.</p>
+    </div>
+    <div class="col">
+      <h3>Secure by Design</h3>
+      <p>Security isn’t an afterthought—it’s woven naturally into our process so your 
+         app is ready to grow, scale, and impress investors.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>What We Do</h2>
+  <div class="service-cards">
+    <div class="card">
+      <h3>🌐 Web App Development</h3>
+      <p>Custom web apps designed to scale, tailored to your product vision. 
+         Always crafted in-house with meticulous attention to detail.</p>
+    </div>
+    <div class="card">
+      <h3>📱 Mobile App Development</h3>
+      <p>Beautiful, high-performing apps for iOS and Android, built with care and 
+         designed for real-world user experience.</p>
+    </div>
+    <div class="card">
+      <h3>⚡ DevSecOps Integration</h3>
+      <p>Automated testing, CI/CD, and secure coding practices—ensuring your launch 
+         is fast, reliable, and investor-ready.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <h2>Our Process</h2>
+  <div class="process-steps">
+    <div class="step">
+      <h3>1. Discovery</h3>
+      <p>We dive deep into your vision and goals to align our work with your product’s future.</p>
+    </div>
+    <div class="step">
+      <h3>2. Craft</h3>
+      <p>In-house development with no shortcuts. We build, test, and refine with you every step of the way.</p>
+    </div>
+    <div class="step">
+      <h3>3. Launch</h3>
+      <p>Your product goes live polished, secure, and ready for growth—with us by your side as partners.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Us</h2>
+  <div class="about-content">
+    <p>We’re a boutique studio founded by makers who believe in quality over quantity. 
+       Unlike large agencies that juggle dozens of clients, we focus on <strong>one project at a time</strong>. 
+       This means you get direct access to the people building your product—no account managers, 
+       no hidden subcontractors.</p>
+
+    <p>Our team blends two passions:</p>
+    <ul>
+      <li><strong>Web & Mobile Development:</strong> Crafting apps that work flawlessly across devices and platforms.</li>
+      <li><strong>Security & Process Excellence:</strong> Bringing DevSecOps practices, project management, 
+          and lean methodology to every build.</li>
+    </ul>
+
+    <p>We know what it’s like to be let down by unreliable dev partners. 
+       As SaaS founders ourselves, we’ve felt the frustration of buggy code, broken stacks, 
+       and wasted opportunities. That’s why we built this studio: 
+       to give startups the boutique partner we always wished we had.</p>
+
+    <a href="#contact" class="cta-btn">👋 Let’s Work Together</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <h2>One Project. Full Attention. Boutique Quality.</h2>
+  <p>If you’re ready for a partner that treats your app like it’s our own, 
+     let’s talk about your next launch.</p>
+  <a href="#contact" class="cta-btn">Book a Free Strategy Call →</a>
+  <p class="small">© 2025 Your Studio Name | Boutique In-House Development</p>
+</footer>
+
+</body>
+</html>
+

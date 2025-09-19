@@ -1,0 +1,44 @@
+✅ Revised About Section (HTML)
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Us</h2>
+  <div class="about-content">
+    <p>We’re a small but passionate team with one mission: 
+       <strong>help startups launch fast—without sacrificing security or quality.</strong></p>
+
+    <p>Our team brings together two key strengths:</p>
+    <ul>
+      <li><strong>Web & Mobile App Development:</strong> A maker who lives and breathes code, 
+          fluent across languages, platforms, and tools, with a passion for building apps 
+          that actually work for real users.</li>
+      <li><strong>Security & DevSecOps:</strong> A security-focused professional, certified project manager, 
+          and Lean Six Sigma Black Belt—experienced in weaving security into the 
+          development process from day one.</li>
+    </ul>
+
+    <p>We’ve been in your shoes. As founders of a SaaS business ourselves, 
+       we know what it feels like to waste time and money on faulty code, 
+       broken stacks, and unreliable development partners. 
+       Those setbacks cost us opportunities—and we’re here to make sure 
+       you never go through the same.</p>
+
+    <p>That’s why our approach is different: 
+       <em>we build apps that are secure by design, 
+       delivered with transparency, and crafted with startup realities in mind.</em></p>
+
+    <p>Highlights from our journey so far:</p>
+    <ul>
+      <li>Led a live webinar on application security & shifting left, helping developers rethink how they build securely.</li>
+      <li>Successfully launched and operated SaaS products, gaining first-hand experience of startup challenges.</li>
+      <li>Blended technical expertise with process excellence—so you get the speed of a startup 
+          with the reliability of enterprise-grade practices.</li>
+    </ul>
+
+    <p>If you’re a startup founder or CTO under pressure to ship quickly, 
+       we’d love to help you launch strong, secure, and ready to scale.</p>
+
+    <a href="#contact" class="cta-btn">👋 Let’s Talk</a>
+  </div>
+</section>
+

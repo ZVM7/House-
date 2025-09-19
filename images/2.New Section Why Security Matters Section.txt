@@ -1,0 +1,21 @@
+Why Security Matters Section (new)
+
+<!-- WHY SECURITY MATTERS -->
+<section id="why-security">
+  <h2>Why Security Matters Early</h2>
+  <div class="three-cols">
+    <div class="col">
+      <h3>Shift-Left Security</h3>
+      <p>Catch issues early → lower cost, fewer risks. Security built in from day one.</p>
+    </div>
+    <div class="col">
+      <h3>Automated Testing</h3>
+      <p>SAST, DAST, and CI/CD pipelines ensure every build is secure and reliable.</p>
+    </div>
+    <div class="col">
+      <h3>Startup-Focused</h3>
+      <p>Move fast without fragility. Launch in weeks, not months—without cutting corners.</p>
+    </div>
+  </div>
+</section>
+

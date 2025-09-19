@@ -1,0 +1,21 @@
+Process Section (new)
+
+<!-- PROCESS -->
+<section id="process">
+  <h2>How We Work</h2>
+  <div class="process-steps">
+    <div class="step">
+      <h3>1. Assess</h3>
+      <p>Security audit + threat model tailored to your product.</p>
+    </div>
+    <div class="step">
+      <h3>2. Secure</h3>
+      <p>Implement fixes, set up automated pipelines, and harden code & infra.</p>
+    </div>
+    <div class="step">
+      <h3>3. Launch</h3>
+      <p>Ship fast, stay investor-ready, and scale with confidence.</p>
+    </div>
+  </div>
+</section>
+

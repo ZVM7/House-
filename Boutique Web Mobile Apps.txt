@@ -1,0 +1,149 @@
+Boutique Web & Mobile Apps, Built In-House
+We’re not a code factory. We’re a boutique studio that takes on one client at a time— delivering beautiful, high-performing, and secure digital experiences with white-glove attention.
+
+✨ Start Your Project
+Why Choose a Boutique Studio?
+Exclusive Focus
+We only take on one project at a time. You get our full attention, concierge-style service, and no competing priorities.
+
+In-House Craftsmanship
+Everything is designed, built, and secured by us. No outsourcing, no middlemen—just direct collaboration with makers.
+
+Secure by Design
+Security isn’t an afterthought—it’s woven naturally into our process so your app is ready to grow, scale, and impress investors.
+
+What We Do
+🌐 Web App Development
+Custom web apps designed to scale, tailored to your product vision. Always crafted in-house with meticulous attention to detail.
+
+📱 Mobile App Development
+Beautiful, high-performing apps for iOS and Android, built with care and designed for real-world user experience.
+
+⚡ DevSecOps Integration
+Automated testing, CI/CD, and secure coding practices—ensuring your launch is fast, reliable, and investor-ready.
+
+Our Process
+1. Discovery
+We dive deep into your vision and goals to align our work with your product’s future.
+
+2. Craft
+In-house development with no shortcuts. We build, test, and refine with you every step of the way.
+
+3. Launch
+Your product goes live polished, secure, and ready for growth—with us by your side as partners.
+
+About Us
+We’re a boutique studio founded by makers who believe in quality over quantity. Unlike large agencies that juggle dozens of clients, we focus on one project at a time. This means you get direct access to the people building your product—no account managers, no hidden subcontractors.
+
+Our team blends two passions:
+
+Web & Mobile Development: Crafting apps that work flawlessly across devices and platforms.
+Security & Process Excellence: Bringing DevSecOps practices, project management, and lean methodology to every build.
+We know what it’s like to be let down by unreliable dev partners. As SaaS founders ourselves, we’ve felt the frustration of buggy code, broken stacks, and wasted opportunities. That’s why we built this studio: to give startups the boutique partner we always wished we had.
+
+👋 Let’s Work Together
+One Project. Full Attention. Boutique Quality.
+If you’re ready for a partner that treats your app like it’s our own, let’s talk about your next launch.
+
+
+
+
+
+
+
+<!-- Cards -->
+      <div class="boutique-cards">
+        <div class="card" data-animate="zoom-in">
+          <h4>Exclusive Focus</h4>
+          <p>We only take on one project at a time. You get our full attention, concierge-style service, and no competing priorities.</p>
+        </div>
+        <div class="card" data-animate="zoom-in">
+          <h4>In-House Craftsmanship</h4>
+          <p>Everything is designed, built, and secured by us. No outsourcing, no middlemen—just direct collaboration with makers.</p>
+        </div>
+        <div class="card" data-animate="zoom-in">
+          <h4>Secure by Design</h4>
+          <p>Security isn’t an afterthought—it’s woven naturally into our process so your app is ready to grow, scale, and impress investors.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- What We Do -->
+    <div class="boutique-services" data-animate="fade-up">
+      <h3>What We Do</h3>
+      <div class="boutique-service-cards"> <!-- renamed to avoid conflict -->
+        <div class="card" data-animate="zoom-in">
+          <h4>🌐 Web App Development</h4>
+          <p>Custom web apps designed to scale, tailored to your product vision. Always crafted in-house with meticulous attention to detail.</p>
+        </div>
+        <div class="card" data-animate="zoom-in">
+          <h4>📱 Mobile App Development</h4>
+          <p>Beautiful, high-performing apps for iOS and Android, built with care and designed for real-world user experience.</p>
+        </div>
+        <div class="card" data-animate="zoom-in">
+          <h4>⚡ DevSecOps Integration</h4>
+          <p>Automated testing, CI/CD, and secure coding practices—ensuring your launch is fast, reliable, and investor-ready.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Process -->
+    <div class="boutique-process">
+      <h3 data-animate="clip-reveal">Our Process</h3>
+      <div class="process-steps">
+        <div class="step" data-animate="fade-left">
+          <h4>1. Discovery</h4>
+          <p>We dive deep into your vision and goals to align our work with your product’s future.</p>
+        </div>
+        <div class="step" data-animate="fade-left">
+          <h4>2. Craft</h4>
+          <p>In-house development with no shortcuts. We build, test, and refine with you every step of the way.</p>
+        </div>
+        <div class="step" data-animate="fade-left">
+          <h4>3. Launch</h4>
+          <p>Your product goes live polished, secure, and ready for growth—with us by your side as partners.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      <!-- Left Side: Heading + Laptop -->
+    <div class="contact-text">
+      <h2>Let's Create Your Web/Mobile Application</h2>
+      <p>
+        We help businesses grow by building powerful digital solutions—custom websites, 
+        mobile apps, and scalable platforms.
+      </p>
+      <div class="laptop-image">
+        <img src="images/laptop.png" alt="Laptop showcasing project">
+      </div>
+    </div>
+    
+    <!-- Right Side: Form -->
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+      </div>
+      <div class="form-group">
+        <label for="company">Company</label>
+        <input type="text" id="company" name="company" placeholder="Your Company">
+      </div>
+      <div class="form-group">
+        <label for="budget">Engagement Budget</label>
+        <select id="budget" name="budget">
+          <option>$1 – $24,999</option>
+          <option>$25,000 – $49,999</option>
+          <option>$50,000 – $99,999</option>
+          <option>$100,000+</option>
+        </select>
+      </div>
+      <button type="submit" class="btn-submit">Start a Project</button>
+    </form>
+    
+  </div>

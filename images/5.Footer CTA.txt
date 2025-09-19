@@ -1,0 +1,10 @@
+Footer / CTA
+
+<!-- FOOTER -->
+<footer id="footer">
+  <h2>Ready to Build Securely?</h2>
+  <p>Funded startups choose us to move fast, reduce risk, and impress investors.</p>
+  <a href="#contact" class="cta-btn">Book a Free DevSecOps Audit →</a>
+  <p class="small">© 2025 Your Studio Name | OWASP-Aligned | Powered by GitHub Secure CI/CD</p>
+</footer>
+
