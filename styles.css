@@ -609,7 +609,7 @@
   justify-content: flex-start;
   max-width: 340px;
   flex: 1 1 300px;
-  z-index: 2222;
+  z-index: 10;
 
   /* hidden initially */
   opacity: 0;
@@ -1755,3 +1755,69 @@
 }
 
 
+
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  /* ================= ABOUT SECTION ================= */
+  .about {
+    padding: 20px;
+  }
+
+  .value-cards {
+    flex-direction: column; /* stack cards vertically on mobile */
+    gap: 15px;
+  }
+
+  .value-card {
+    width: 100%; /* full width on mobile */
+  }
+
+  /* ================= PORTFOLIO ================= */
+  .portfolio-slider {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .portfolio-filters {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* ================= SERVICES ================= */
+  .service-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* ================= PROCESS ================= */
+  .process-steps {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* ================= SUPPORT PACKAGES ================= */
+  .support-packages .package-step {
+    width: 100%;
+  }
+
+  /* ================= CONTACT ================= */
+  .contact-form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* General text & spacing adjustments */
+  h2, p {
+    font-size: 1rem; /* adjust for small screens */
+  }
+
+  /* Reduce large margins/paddings on mobile */
+  section {
+    padding: 20px 10px;
+  }
+}
