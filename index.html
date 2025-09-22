@@ -16,101 +16,115 @@
 <body>
 
 
+<header class="header">
+  <div class="container">
+    <!-- Logo + Company Name -->
+    <a href="#" class="logo-link">
+      <img src="images/LOGO.png" alt="House of Code Logo" class="logo">
+      <span class="company-name">House of Code</span>
+    </a>
 
-    <header class="header">
-      <div class="container">
-        <!-- Logo + Company Name -->
-        <div class="logo">
-          <img src="images/LOGO.png" alt="Company Logo">
-          <span class="company-name">House of Code</span>
-        </div>
+    <!-- Navbar -->
+    <nav class="navbar" aria-label="Main Navigation">
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Work Flow</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Coaching</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
 
-        <!-- Navbar -->
-        <nav class="navbar">
-          <a href="#">Home</a>
-          <a href="#">Services</a>
-          <a href="#">Work flow</a> 
-          <a href="#">Packages</a>
-          <a href="#">Coaching</a>
-          <a href="#">About</a>
-        </nav>
+    <!-- CTA Button -->
+    <a href="#contact" class="header-btn">Get Started</a>
 
-        <!-- CTA Button -->
-        <a href="#" class="header-btn">Get Started</a>
-      </div>
-    </header>
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" aria-label="Toggle Navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+</header>
+
 
 
     <!-- HERO -->
-    <section class="hero">
-        <video autoplay muted loop playsinline>
-          <source src="videos/bacground hero.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <div class="overlay"></div>
-        <div class="hero-content">
-          <h1>Boutique Web & Mobile Apps,<br> Built In-House</h1>
-          <p>No outsourching, no shortcuts, just dedicated experts building your app the right way from day one</p>
+<!-- HERO -->
+  <section class="hero">
+    <video autoplay muted loop playsinline preload="none" loading="lazy">
+      <source src="videos/bacground hero.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
 
-          <div class="hero-form">
-            <input type="email" placeholder="Enter your email">
-            <button class="btn">Let's Build Together</button>
-          </div>
-        </div>
-    </section>
+    <div class="hero-content">
+      <h1>Web & Mobile Apps,<span class="highlight">Built In-House</span></h1>
+      <p>No outsourcing, no shortcuts — just <span class="highlight">dedicated experts</span> building your app the right way from day one</p>
 
-
-    <section class="why-choose bgH" id="why-choose" aria-labelledby="why-choose-title">
-      <div class="container">
-        <header class="why-choose-header">
-          <h2 id="why-choose-title">Why Choose Us</h2>
-          <p class="why-choose-sub">
-            We combine boutique focus, engineering excellence, and security-by-design to deliver apps that launch faster and scale with confidence.
-          </p>
-        </header>
-
-        <div class="why-cards">
-          <article class="why-card" role="article" aria-label="Exclusive Focus">
-            <div class="why-icon" aria-hidden="true">
-              <!-- Focus / Target -->
-              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="3" stroke-width="2" />
-                <path d="M2 12h3M19 12h3M12 2v3M12 19v3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <h4>Exclusive Focus</h4>
-            <p>We take one project at a time so your product receives concierge attention—no competing priorities, no distractions.</p>
-          </article>
-
-          <article class="why-card" role="article" aria-label="In-House Craftsmanship">
-            <div class="why-icon" aria-hidden="true">
-              <!-- Code / Tools -->
-              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <polyline points="16 18 22 12 16 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <polyline points="8 6 2 12 8 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <h4>In-House Craftsmanship</h4>
-            <p>Everything is designed, developed and secured by our team—no outsourcing—so you collaborate directly with the makers.</p>
-          </article>
-
-          <article class="why-card" role="article" aria-label="Secure by Design">
-            <div class="why-icon" aria-hidden="true">
-              <!-- Shield -->
-              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 3l7 3v5c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6l7-3z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M9 12l2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <h4>Secure by Design</h4>
-            <p>Security is embedded in our process—automated tests, CI/CD, and secure defaults so your product is investor-ready from day one.</p>
-          </article>
-        </div> <!-- /.why-cards -->
-      </div> <!-- /.container -->
-      <div class="why-choose-cta">
-      <a href="#contact" class="cta-btn">Let's Build Together</a>
+      <form class="hero-form" onsubmit="return false;">
+        <label for="hero-email" class="visually-hidden">Enter your email</label>
+        <input  aria-describedby="hero-email-desc" type="email" id="hero-email" placeholder="Enter your email" aria-label="Enter your email">
+        <button class="btn" type="button" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+          Let's Build Together
+        </button>
+      </form>
     </div>
   </section>
+
+
+
+  <section class="why-choose bgH" id="why-choose" aria-labelledby="why-choose-title">
+  <div class="container">
+    <header class="why-choose-header">
+      <h2 id="why-choose-title">Why Choose Us</h2>
+      <p class="why-choose-sub">
+        We combine boutique focus, engineering excellence, and security-by-design to deliver apps that launch faster and scale with confidence.
+      </p>
+    </header>
+
+    <div class="why-cards">
+      <article class="why-card" role="article" aria-label="Exclusive Focus" tabindex="0" data-index="0">
+        <div class="why-icon" aria-hidden="true">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="3" stroke-width="2" />
+            <path d="M2 12h3M19 12h3M12 2v3M12 19v3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h4>Exclusive Focus</h4>
+        <p>We take one project at a time so your product receives concierge attention—no competing priorities, no distractions.</p>
+      </article>
+
+      <article class="why-card" role="article" aria-label="In-House Craftsmanship" tabindex="0" data-index="1">
+        <div class="why-icon" aria-hidden="true">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="16 18 22 12 16 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline points="8 6 2 12 8 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h4>In-House Craftsmanship</h4>
+        <p>Everything is designed, developed and secured by our team—no outsourcing—so you collaborate directly with the makers.</p>
+      </article>
+
+      <article class="why-card" role="article" aria-label="Secure by Design" tabindex="0" data-index="2">
+        <div class="why-icon" aria-hidden="true">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3l7 3v5c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6l7-3z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 12l2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h4>Secure by Design</h4>
+        <p>Security is embedded in our process—automated tests, CI/CD, and secure defaults so your product is investor-ready from day one.</p>
+      </article>
+    </div> <!-- /.why-cards -->
+  </div> <!-- /.container -->
+
+  <div class="why-choose-cta">
+    <a href="#contact" class="cta-btn">Let's Build Together</a>
+  </div>
+</section>
+
 
     <section class="services" id="services">
         <!-- Falling Elements -->
@@ -222,9 +236,6 @@
 
 <section class="about" id="about">
 
-
-
-
   <div class="container about-container">
 
     <!-- LEFT SIDE: About Content -->
@@ -300,6 +311,7 @@
 
   </div> <!-- End .about-container -->
 </section>
+
 <section class="support-packages">
   <!-- Section Heading -->
   <div class="section-header">
@@ -356,6 +368,7 @@
     <form>
       <label for="interest">I’m interested in:</label>
       <select id="interest" name="interest">
+        <option value="" disabled selected>Select a package</option>
         <option>Fix & Go</option>
         <option>Build & Improve</option>
         <option>Evolve & Grow</option>
@@ -383,23 +396,23 @@
     <!-- Right Column: Form -->
     <form class="contact-form">
       <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your Name">
+        <label class="label-typewriter" for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
       </div>
 
       <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="you@example.com">
+        <label  class="label-typewriter" for="email" >Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
       </div>
 
       <div class="form-group">
-        <label for="company">Company</label>
-        <input type="text" id="company" name="company" placeholder="Your Company">
+        <label  class="label-typewriter" for="company">Company</label>
+        <input type="text" id="company" name="company" placeholder="Your Company" required>
       </div>
 
       <!-- Service Selection -->
       <div class="form-group">
-        <label for="service">Which type of project are you interested in?</label>
+        <label  class="label-typewriter"  for="service">Which type of project are you interested in?</label>
         <select id="service" name="service">
           <option value="" disabled selected>Select a service</option>
           <option>Custom Web Application</option>
@@ -411,7 +424,7 @@
 
       <!-- Budget Selection -->
       <div class="form-group">
-        <label for="budget">Estimated Project Budget</label>
+        <label class="label-typewriter"  for="budget">Estimated Project Budget</label>
         <select id="budget" name="budget">
           <option value="" disabled selected>Select your budget</option>
           <option>$1 – $24,999 — Perfect for MVPs or small updates</option>
@@ -423,7 +436,7 @@
 
       <!-- Project Description -->
       <div class="form-group">
-        <label for="project">Project Description</label>
+        <label class="label-typewriter"  for="project">Project Description</label>
         <textarea id="project" name="project" rows="5" placeholder="Describe your project idea, goals, or requirements..."></textarea>
       </div>
 
