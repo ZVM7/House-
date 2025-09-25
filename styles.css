@@ -1821,3 +1821,139 @@
     padding: 20px 10px;
   }
 }
+
+
+
+
+
+
+
+/* ===== Mobile nav styles ===== */
+/* Hamburger button */
+.menu-toggle {
+  display: none; /* hidden on desktop */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  gap: 1px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+.menu-toggle .bar {
+  display: block;
+  width: 32px;
+  height: 5px;
+  background: #16a34a;      /* bright green (adjust to your brand shade) */
+  margin: 3px 0;
+  border-radius: 2px;
+}
+
+.menu-toggle:hover .bar {
+  background: #22c55e;      /* lighter green on hover */
+}
+
+
+/* Mobile nav (hidden by default) */
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 8px 30px rgba(2,6,23,0.08);
+  z-index: 1200;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height .36s ease, opacity .36s ease;
+}
+
+/* Show state */
+.mobile-nav.show {
+  display: block;
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* Mobile nav links */
+.mobile-nav a {
+  display: block;
+  padding: 14px 20px;
+  color: #0f172a;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 900px) {
+  .navbar { display: none; }  /* hide desktop nav */
+  .header-btn { display: none; } /* hide desktop CTA */
+  .menu-toggle { display: inline-flex; } /* show hamburger */
+}
+
+/* ===== Only Hero on Mobile ===== */
+@media (max-width: 900px) {
+  section:not(.hero) {
+    display: none !important; /* hide all except hero */
+  }
+}
+
+/* Hide everything except hero on mobile */
+@media (max-width: 900px) {
+  section,
+  footer {
+    display: none;
+  }
+
+  .hero {
+    display: block; /* keep hero visible */
+  }
+}
+
+
+/* ==== Mobile Nav Styling ==== */
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #0f172a; /* deep navy/black background */
+  border-top: 2px solid #22c55e; /* your neon green highlight */
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  z-index: 1200;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height .36s ease, opacity .36s ease;
+  border-radius: 0 0 12px 12px; /* smooth bottom corners */
+}
+
+/* mobile nav visible */
+.mobile-nav.show {
+  display: block;
+  max-height: 600px;
+  opacity: 1;
+}
+
+/* nav links */
+.mobile-nav a {
+  display: block;
+  padding: 16px 20px;
+  color: #f9fafb; /* off-white for contrast */
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* hover effect */
+.mobile-nav a:hover {
+  background: rgba(34, 197, 94, 0.15); /* subtle green glow */
+  color: #22c55e;
+  padding-left: 28px; /* smooth slide effect */
+}

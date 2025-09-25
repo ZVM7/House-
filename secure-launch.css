@@ -1,0 +1,539 @@
+/* =====================
+   GLOBAL TYPOGRAPHY
+===================== */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f9fafb;
+  color: #111827;
+  line-height: 1.7;
+}
+
+
+/* =====================
+   STICKY CTA BUTTON
+===================== */
+.sticky-cta {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #10b981; /* green */
+  color: #fff;
+  padding: 0.9rem 2rem;
+  border-radius: 8px; /* rectangular but slightly rounded */
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
+  transition: all 0.3s ease;
+  z-index: 2000;
+  display: none; /* hidden by default */
+}
+
+.sticky-cta:hover {
+  background: #059669;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+  transform: translateY(-2px);
+}
+
+
+
+h1, h2, h3 {
+  font-family: 'Clash Display', 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  position: relative;
+  color: #0f172a;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #22c55e, #00c76f);
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+/* =====================
+   SHARED SECTION LAYOUT
+===================== */
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(60px, 10vh, 100px) 2rem;
+}
+
+.section-grid .text {
+  color: #1e293b;
+}
+
+.section-grid p {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+.section-grid ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section-grid ul li {
+  margin-bottom: 0.9rem;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 1.1rem;
+  color: #1f2937;
+}
+
+.section-grid ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #22c55e;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.section-grid ul.pain-points li span.icon {
+  font-size: 12.8rem;   /* make emoji/icon bigger */
+  line-height: 1;
+}
+
+
+
+/* =====================
+   CTA Buttons
+===================== */
+.cta-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: linear-gradient(135deg, #22c55e, #00ff88);
+  color: #0f172a;
+  padding: 1rem 2rem;
+  border-radius: 14px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0, 255, 136, 0.3);
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: linear-gradient(135deg, #16a34a, #00c76f);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 255, 136, 0.4);
+}
+
+/* =====================
+   Images
+===================== */
+.section-grid .image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.section-grid .image img:hover {
+  transform: scale(1.03);
+}
+
+/* =====================
+   LAYOUT VARIANTS
+===================== */
+.layout-left .text { order: 1; }
+.layout-left .image { order: 2; }
+
+.layout-right .text { order: 2; }
+.layout-right .image { order: 1; }
+
+.layout-top {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+.layout-top .image {
+  margin-bottom: 2rem;
+}
+
+.layout-bottom {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+.layout-bottom .text {
+  margin-bottom: 2rem;
+}
+
+.layout-center {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+.layout-center .image img {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+/* =====================
+   BACKGROUNDS
+===================== */
+.next-step {
+  background: #f9fafb;
+}
+.trust {
+  background: #fff;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+.footer-cta {
+  background: linear-gradient(135deg, #111827, #1f2937);
+  color: #fff;
+  text-align: left;
+  padding: clamp(40px, 8vh, 80px) 20px;
+  border-radius: 20px 20px 0 0;
+}
+.footer-cta h2 { color: #fff; }
+.footer-cta p { color: #d1d5db; }
+
+/* =====================
+   RESPONSIVE DESIGN
+===================== */
+@media (max-width: 900px) {
+  .section-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .section-grid .text { order: 2; }
+  .section-grid .image { order: 1; }
+}
+
+
+/* ================= MODAL ================= */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: none; /* hidden by default */
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.7);
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #1e293b;
+  padding: 2.5rem;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  position: relative;
+}
+
+.modal-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.modal-content p {
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+}
+
+.modal-content .form-group {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.modal-content label {
+  display: block;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+  margin-bottom: 0.3rem;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Animation */
+.modal .fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.modal.show .fade-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* WHY LIST (modern styling) */
+.why-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.why-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem; /* modern larger font */
+  font-weight: 600;
+  line-height: 1.6;
+  color: #111827; /* dark slate text */
+}
+
+.why-list .icon {
+  font-size: 2rem; /* bigger icons */
+  flex-shrink: 0;
+}
+
+.why-list .text {
+  flex: 1;
+}
+
+/* subtle hover for interactivity */
+.why-list li:hover {
+  transform: translateX(5px);
+  transition: transform 0.2s ease-in-out;
+}
+
+
+/* LIST */
+.trust-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left; /* ✅ force left alignment */
+}
+
+.trust-list li {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 1.2rem;
+  padding-left: 2.2rem;
+  position: relative;
+  text-align: left; /* ✅ ensure li text stays left-aligned */
+}
+
+/* Responsive override */
+@media (max-width: 900px) {
+  .trust .section-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .trust .image {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+
+  .trust .text {
+    order: 2;
+  }
+
+  .trust .text h2::after {
+    margin: 0.5rem auto 0 auto;
+  }
+
+  .trust-list {
+    text-align: left; /* ✅ keep left alignment even on mobile */
+  }
+}
+
+
+.trust .text h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  text-align: left; /* ✅ make sure heading is left aligned */
+}
+
+.trust .text h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #16a34a; /* green accent line */
+  margin: 0.5rem 0 0 0; /* ✅ no auto margin, keeps it left-aligned */
+  border-radius: 2px;
+}
+
+
+
+/* Container */
+.thank-you-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(60px, 12vh, 120px) 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Headline */
+.thank-you-page h1 {
+  font-family: 'Clash Display', 'Space Grotesk', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.thank-you-page .highlight {
+  color: #00ff88;
+}
+
+/* Subhead */
+.thank-you-page .subhead {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  color: #9ca3af;
+  margin-bottom: 2.5rem;
+}
+
+/* Body Section */
+.thank-you-body {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 16px;
+  margin-bottom: 3rem;
+  text-align: left;
+  max-width: 800px;
+}
+
+.thank-you-body p {
+  margin-bottom: 1.5rem;
+  color: #d1d5db;
+}
+
+.thank-you-body ul {
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.thank-you-body li {
+  margin: 0.5rem 0;
+  font-size: 1.05rem;
+  color: #e5e7eb;
+}
+
+
+.thank-you-page {
+  background: linear-gradient(135deg, #111827, #1f2937);
+  color: #fff;
+  min-height: 100vh;      /* make sure background fills the screen */
+  padding: 60px 20px;     /* give spacing around content */
+  text-align: center;     /* optional: keeps h1/h2 centered */
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.cta-section h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.cta-section p {
+  margin-bottom: 2rem;
+  color: #d1d5db;
+}
+
+/* CTA Button */
+.cta-btn {
+  display: inline-block;
+  background: #00ff88;
+  color: #0f172a;
+  padding: 14px 32px;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 1.15rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #00c76f;
+  transform: translateY(-2px);
+}
+
+/* Reassurance */
+.reassurance {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
+
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #16a34a;
+  margin: 1.5rem auto; /* this centers it */
+}
+
+
+.footer-cta .image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* pushes it upwards */
+  margin-top: -30px; /* adjust this value to move it further up */
+}
+
+.footer-cta .image img {
+  max-width: 300px; /* keep it from overpowering the text */
+  height: auto;
+}
